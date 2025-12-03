@@ -1,0 +1,29 @@
+modules = ["java-graalvm22.3", "java-21"]
+[agent]
+expertMode = true
+
+[workflows]
+runButton = "Project"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Build OakKits"
+
+[[workflows.workflow]]
+name = "Build OakKits"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "mvn clean package -q && echo \"✅ Build successful! JAR: $(ls -lh target/*.jar | awk '{print $9, $5}')\""
+
+[workflows.workflow.metadata]
+outputType = "console"
+
+[nix]
+channel = "stable-25_05"
