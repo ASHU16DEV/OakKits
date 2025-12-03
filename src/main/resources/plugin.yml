@@ -1,0 +1,61 @@
+name: OakKits
+version: ${project.version}
+main: com.oakkits.OakKits
+api-version: 1.16
+author: ASHU16
+description: A lightweight professional chat-based Kits plugin with GeyserMC/Bedrock support
+softdepend: [Vault, floodgate, PlaceholderAPI]
+
+commands:
+  kit:
+    description: Main kit command
+    usage: /<command> [kitname]
+    aliases: [kits]
+
+permissions:
+  oakkits.admin:
+    description: All admin permissions
+    default: op
+    children:
+      oakkits.admin.create: true
+      oakkits.admin.delete: true
+      oakkits.admin.give: true
+      oakkits.admin.setcooldown: true
+      oakkits.admin.setcost: true
+      oakkits.admin.setpermission: true
+      oakkits.admin.resetcooldown: true
+      oakkits.admin.preview: true
+      oakkits.admin.reload: true
+  oakkits.admin.create:
+    description: Create kits from inventory
+    default: op
+  oakkits.admin.delete:
+    description: Delete kits
+    default: op
+  oakkits.admin.give:
+    description: Give kits to players
+    default: op
+  oakkits.admin.setcooldown:
+    description: Set kit cooldowns
+    default: op
+  oakkits.admin.setcost:
+    description: Set kit costs
+    default: op
+  oakkits.admin.setpermission:
+    description: Set kit permissions
+    default: op
+  oakkits.admin.resetcooldown:
+    description: Reset player cooldowns
+    default: op
+  oakkits.admin.preview:
+    description: Preview kits for players
+    default: op
+  oakkits.admin.reload:
+    description: Reload plugin configurations
+    default: op
+  oakkits.admin.edit:
+    description: Edit kits using GUI editor
+    default: op
+  oakkits.use:
+    description: Use kits command
+    default: true

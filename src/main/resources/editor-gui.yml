@@ -1,0 +1,452 @@
+# ╔═══════════════════════════════════════════════════════════════╗
+# ║              OAKKITS - PROFESSIONAL EDITOR GUI                ║
+# ║                    Configuration File                         ║
+# ╚═══════════════════════════════════════════════════════════════╝
+# 
+# All changes in this file can be applied using /kit reload
+# Color codes: &0-9, &a-f, &l (bold), &n (underline), &o (italic)
+# Placeholders: {kit}, {cooldown}, {cost}, {permission}, {displayname}
+
+# ┌─────────────────────────────────────────────────────────────────┐
+# │                      GUI TITLES                                 │
+# └─────────────────────────────────────────────────────────────────┘
+titles:
+  main: "&0&l✦ &8Kit Editor &0&l✦ &7{kit}"
+  items: "&0&l✦ &8Items Editor &0&l✦ &7{kit}"
+  armor: "&0&l✦ &8Armor Editor &0&l✦ &7{kit}"
+  cooldown: "&0&l✦ &8Cooldown Settings &0&l✦ &7{kit}"
+  cost: "&0&l✦ &8Price Settings &0&l✦ &7{kit}"
+  permission: "&0&l✦ &8Permission Settings &0&l✦ &7{kit}"
+  displayname: "&0&l✦ &8Display Name &0&l✦ &7{kit}"
+  commands: "&0&l✦ &8Commands Editor &0&l✦ &7{kit}"
+
+# ┌─────────────────────────────────────────────────────────────────┐
+# │                    GUI MATERIALS                                │
+# └─────────────────────────────────────────────────────────────────┘
+materials:
+  border: "BLACK_STAINED_GLASS_PANE"
+  filler: "GRAY_STAINED_GLASS_PANE"
+
+# ┌─────────────────────────────────────────────────────────────────┐
+# │               COOLDOWN EDITOR SETTINGS                          │
+# └─────────────────────────────────────────────────────────────────┘
+cooldown-editor:
+  add-buttons:
+    - slot: 19
+      time: 60000
+      name: "&a+1m"
+      material: "LIME_STAINED_GLASS_PANE"
+      lore:
+        - "&7Add 1 minute"
+    - slot: 20
+      time: 300000
+      name: "&a+5m"
+      material: "LIME_STAINED_GLASS_PANE"
+      lore:
+        - "&7Add 5 minutes"
+    - slot: 21
+      time: 1800000
+      name: "&a+30m"
+      material: "LIME_STAINED_GLASS_PANE"
+      lore:
+        - "&7Add 30 minutes"
+    - slot: 22
+      time: 3600000
+      name: "&a+1h"
+      material: "LIME_STAINED_GLASS_PANE"
+      lore:
+        - "&7Add 1 hour"
+    - slot: 23
+      time: 21600000
+      name: "&a+6h"
+      material: "LIME_STAINED_GLASS_PANE"
+      lore:
+        - "&7Add 6 hours"
+    - slot: 24
+      time: 86400000
+      name: "&a+1d"
+      material: "LIME_STAINED_GLASS_PANE"
+      lore:
+        - "&7Add 1 day"
+    - slot: 25
+      time: 604800000
+      name: "&a+1w"
+      material: "LIME_STAINED_GLASS_PANE"
+      lore:
+        - "&7Add 1 week"
+  
+  remove-buttons:
+    - slot: 28
+      time: -60000
+      name: "&c-1m"
+      material: "RED_STAINED_GLASS_PANE"
+      lore:
+        - "&7Remove 1 minute"
+    - slot: 29
+      time: -300000
+      name: "&c-5m"
+      material: "RED_STAINED_GLASS_PANE"
+      lore:
+        - "&7Remove 5 minutes"
+    - slot: 30
+      time: -1800000
+      name: "&c-30m"
+      material: "RED_STAINED_GLASS_PANE"
+      lore:
+        - "&7Remove 30 minutes"
+    - slot: 31
+      time: -3600000
+      name: "&c-1h"
+      material: "RED_STAINED_GLASS_PANE"
+      lore:
+        - "&7Remove 1 hour"
+    - slot: 32
+      time: -21600000
+      name: "&c-6h"
+      material: "RED_STAINED_GLASS_PANE"
+      lore:
+        - "&7Remove 6 hours"
+    - slot: 33
+      time: -86400000
+      name: "&c-1d"
+      material: "RED_STAINED_GLASS_PANE"
+      lore:
+        - "&7Remove 1 day"
+    - slot: 34
+      time: -604800000
+      name: "&c-1w"
+      material: "RED_STAINED_GLASS_PANE"
+      lore:
+        - "&7Remove 1 week"
+  
+  reset-button:
+    slot: 39
+    name: "&cRESET"
+    material: "DANDELION"
+    lore:
+      - "&7Reset cooldown to 0"
+
+# ┌─────────────────────────────────────────────────────────────────┐
+# │                 COST EDITOR SETTINGS                            │
+# └─────────────────────────────────────────────────────────────────┘
+cost-editor:
+  add-buttons:
+    - slot: 19
+      amount: 10
+      name: "&a+$10"
+      material: "GOLD_NUGGET"
+      lore:
+        - "&7Add $10"
+    - slot: 20
+      amount: 50
+      name: "&a+$50"
+      material: "GOLD_NUGGET"
+      lore:
+        - "&7Add $50"
+    - slot: 21
+      amount: 100
+      name: "&a+$100"
+      material: "GOLD_NUGGET"
+      lore:
+        - "&7Add $100"
+    - slot: 22
+      amount: 500
+      name: "&a+$500"
+      material: "GOLD_INGOT"
+      lore:
+        - "&7Add $500"
+    - slot: 23
+      amount: 1000
+      name: "&a+$1K"
+      material: "GOLD_INGOT"
+      lore:
+        - "&7Add $1,000"
+    - slot: 24
+      amount: 5000
+      name: "&a+$5K"
+      material: "GOLD_BLOCK"
+      lore:
+        - "&7Add $5,000"
+    - slot: 25
+      amount: 10000
+      name: "&a+$10K"
+      material: "GOLD_BLOCK"
+      lore:
+        - "&7Add $10,000"
+  
+  remove-buttons:
+    - slot: 28
+      amount: -10
+      name: "&c-$10"
+      material: "IRON_NUGGET"
+      lore:
+        - "&7Remove $10"
+    - slot: 29
+      amount: -50
+      name: "&c-$50"
+      material: "IRON_NUGGET"
+      lore:
+        - "&7Remove $50"
+    - slot: 30
+      amount: -100
+      name: "&c-$100"
+      material: "IRON_NUGGET"
+      lore:
+        - "&7Remove $100"
+    - slot: 31
+      amount: -500
+      name: "&c-$500"
+      material: "IRON_INGOT"
+      lore:
+        - "&7Remove $500"
+    - slot: 32
+      amount: -1000
+      name: "&c-$1K"
+      material: "IRON_INGOT"
+      lore:
+        - "&7Remove $1,000"
+    - slot: 33
+      amount: -5000
+      name: "&c-$5K"
+      material: "IRON_BLOCK"
+      lore:
+        - "&7Remove $5,000"
+    - slot: 34
+      amount: -10000
+      name: "&c-$10K"
+      material: "IRON_BLOCK"
+      lore:
+        - "&7Remove $10,000"
+  
+  free-button:
+    slot: 39
+    name: "&cMAKE FREE"
+    material: "DANDELION"
+    lore:
+      - "&7Set cost to $0"
+
+# ┌─────────────────────────────────────────────────────────────────┐
+# │                 MAIN MENU BUTTONS                               │
+# └─────────────────────────────────────────────────────────────────┘
+buttons:
+  items:
+    material: "CHEST"
+    name: "&b&lITEMS"
+    lore:
+      - ""
+      - "&7Edit the items that"
+      - "&7players receive in kit"
+      - ""
+      - "&8▸ &fClick to edit"
+  
+  commands:
+    material: "REPEATING_COMMAND_BLOCK"
+    name: "&5&lCOMMANDS"
+    lore:
+      - ""
+      - "&7Commands executed when"
+      - "&7a player claims this kit"
+      - ""
+      - "&8▸ &fClick to edit"
+  
+  armor:
+    material: "DIAMOND_CHESTPLATE"
+    name: "&d&lARMOR"
+    lore:
+      - ""
+      - "&7Edit the armor pieces"
+      - "&7included in this kit"
+      - ""
+      - "&8▸ &fClick to edit"
+  
+  cost:
+    material: "GOLD_INGOT"
+    name: "&6&lCOST"
+    lore:
+      - ""
+      - "&7Current: &a${cost}"
+      - ""
+      - "&8▸ &fClick to edit"
+  
+  cooldown:
+    material: "CLOCK"
+    name: "&a&lCOOLDOWN"
+    lore:
+      - ""
+      - "&7Current: &e{cooldown}"
+      - ""
+      - "&8▸ &fClick to edit"
+  
+  permission:
+    material: "TRIPWIRE_HOOK"
+    name: "&c&lPERMISSION"
+    lore:
+      - ""
+      - "&7Current: &f{permission}"
+      - ""
+      - "&8▸ &fClick to edit"
+  
+  displayname:
+    material: "NAME_TAG"
+    name: "&e&lDISPLAY NAME"
+    lore:
+      - ""
+      - "&7Current: {displayname}"
+      - ""
+      - "&8▸ &fClick to edit"
+  
+  onetime:
+    material: "ENDER_EYE"
+    name: "&6&lONE-TIME USE"
+    lore:
+      - ""
+      - "&7Kit can only be"
+      - "&7claimed once per player"
+  
+  save:
+    material: "EMERALD"
+    name: "&a&lSAVE CHANGES"
+    lore:
+      - ""
+      - "&7Save all modifications"
+      - "&7to this kit"
+      - ""
+      - "&8▸ &fClick to save"
+  
+  close:
+    material: "BARRIER"
+    name: "&c&lCLOSE"
+    lore:
+      - ""
+      - "&7Exit without saving"
+      - "&cChanges will be lost!"
+
+# ┌─────────────────────────────────────────────────────────────────┐
+# │                 SUB-MENU BUTTONS                                │
+# └─────────────────────────────────────────────────────────────────┘
+  back:
+    material: "ARROW"
+    name: "&7◀ BACK"
+    lore:
+      - ""
+      - "&7Return to main menu"
+  
+  import-inventory:
+    material: "HOPPER"
+    name: "&aIMPORT INVENTORY"
+    lore:
+      - ""
+      - "&7Import all items from"
+      - "&7your current inventory"
+      - ""
+      - "&8▸ &fClick to import"
+  
+  import-armor:
+    material: "ARMOR_STAND"
+    name: "&aIMPORT WORN ARMOR"
+    lore:
+      - ""
+      - "&7Import your currently"
+      - "&7equipped armor pieces"
+      - ""
+      - "&8▸ &fClick to import"
+  
+  clear-all:
+    material: "TNT"
+    name: "&cCLEAR ALL ITEMS"
+    lore:
+      - ""
+      - "&7Remove all items"
+      - "&7from this kit"
+      - ""
+      - "&c⚠ Click to clear"
+  
+  clear-armor:
+    material: "TNT"
+    name: "&cCLEAR ARMOR"
+    lore:
+      - ""
+      - "&7Remove all armor"
+      - "&7from this kit"
+      - ""
+      - "&c⚠ Click to clear"
+
+# ┌─────────────────────────────────────────────────────────────────┐
+# │              PERMISSION EDITOR BUTTONS                          │
+# └─────────────────────────────────────────────────────────────────┘
+permission-editor:
+  public-button:
+    slot: 11
+    name-public: "&a&lPUBLIC KIT"
+    name-private: "&e&lMAKE PUBLIC"
+    material-public: "LIME_DYE"
+    material-private: "OAK_DOOR"
+    lore:
+      - ""
+      - "&7Make kit accessible"
+      - "&7to everyone"
+      - ""
+      - "&7Status: {status}"
+      - ""
+      - "&8▸ &fClick to toggle"
+  
+  custom-button:
+    slot: 13
+    name: "&e&lCUSTOM PERMISSION"
+    material: "PAPER"
+    lore:
+      - ""
+      - "&7Click to type a custom"
+      - "&7permission in chat"
+  
+  reset-button:
+    slot: 15
+    name: "&6&lRESET TO DEFAULT"
+    material: "TRIPWIRE_HOOK"
+    lore:
+      - ""
+      - "&7Reset to: oakkits.kit.{kit}"
+
+# ┌─────────────────────────────────────────────────────────────────┐
+# │              DISPLAY NAME EDITOR                                │
+# └─────────────────────────────────────────────────────────────────┘
+displayname-editor:
+  chat-input-button:
+    slot: 13
+    name: "&e&lTYPE IN CHAT"
+    material: "WRITABLE_BOOK"
+    lore:
+      - ""
+      - "&7Click to type a new"
+      - "&7display name in chat"
+      - "&7Use &c& &7for color codes!"
+
+# ┌─────────────────────────────────────────────────────────────────┐
+# │                    MESSAGES                                     │
+# └─────────────────────────────────────────────────────────────────┘
+messages:
+  type-displayname: "&e&l✎ &eType the new display name in chat:"
+  type-displayname-hint: "&7Use color codes like &c&6&a etc. Type 'cancel' to cancel."
+  type-permission: "&e&l✎ &eType the new permission in chat:"
+  type-permission-hint: "&7Type 'cancel' to cancel."
+  type-command: "&e&l✎ &eType the command to add (without /):"
+  type-command-hint: "&7Use {player} for player name. Type 'cancel' to cancel."
+  cancelled: "&c✗ Input cancelled."
+  saved: "&a✓ Kit saved successfully!"
+  name-updated: "&a✓ Display name updated!"
+  permission-updated: "&a✓ Permission updated to: &f{permission}"
+  permission-public: "&a✓ Kit is now public!"
+  permission-reset: "&a✓ Permission reset to default!"
+  command-added: "&a✓ Command added: &f/{command}"
+  command-removed: "&c✗ Command removed."
+  commands-cleared: "&c✗ All commands cleared!"
+  items-imported: "&a✓ Items imported from inventory!"
+  armor-imported: "&a✓ Armor imported!"
+  items-cleared: "&c✗ All items cleared!"
+  armor-cleared: "&c✗ Armor cleared!"
+  cooldown-updated: "&a✓ Cooldown: &e{cooldown}"
+  cooldown-reset: "&a✓ Cooldown reset to 0!"
+  cost-updated: "&a✓ Cost: &a${cost}"
+  cost-free: "&a✓ Kit is now free!"
+  onetime-on: "&a✓ One-time use: &aON"
+  onetime-off: "&a✓ One-time use: &cOFF"

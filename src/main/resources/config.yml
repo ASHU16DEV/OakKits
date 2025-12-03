@@ -1,0 +1,122 @@
+#  ██████╗  █████╗ ██╗  ██╗██╗  ██╗██╗████████╗███████╗
+# ██╔═══██╗██╔══██╗██║ ██╔╝██║ ██╔╝██║╚══██╔══╝██╔════╝
+# ██║   ██║███████║█████╔╝ █████╔╝ ██║   ██║   ███████╗
+# ██║   ██║██╔══██║██╔═██╗ ██╔═██╗ ██║   ██║   ╚════██║
+# ╚██████╔╝██║  ██║██║  ██╗██║  ██╗██║   ██║   ███████║
+#  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝
+# Version: 1.0 | Author: ASHU16
+
+# ============================================
+#              INVENTORY SETTINGS
+# ============================================
+inventory:
+  # Deny kit claim if player inventory is full
+  deny-if-full: true
+  # Drop items on ground if inventory is full
+  drop-on-ground: false
+  # Automatically equip armor pieces
+  auto-equip-armor: true
+  # Clear player inventory before giving kit
+  clear-before-give: false
+  # Play sound when kit is claimed
+  claim-sound:
+    enabled: true
+    sound: "ENTITY_PLAYER_LEVELUP"
+    volume: 1.2
+    pitch: 1.0
+
+# ============================================
+#              ECONOMY SETTINGS
+# ============================================
+# Requires Vault plugin for economy support
+economy:
+  enabled: true
+  # Refund cost if kit cannot be given (e.g., inventory full with deny-if-full)
+  refund-on-fail: true
+  # Currency symbol for display
+  currency-symbol: "$"
+
+# ============================================
+#             COOLDOWN SETTINGS
+# ============================================
+cooldown:
+  # Save cooldowns when player quits
+  save-on-quit: true
+  # Global cooldown between any kit claims (in seconds, 0 = disabled)
+  global-cooldown: 0
+  # Bypass cooldown permission: oakkits.bypass.cooldown
+
+# ============================================
+#             PERMISSION SETTINGS
+# ============================================
+permissions:
+  # Permission to bypass cooldowns: oakkits.bypass.cooldown
+  # Permission to bypass costs: oakkits.bypass.cost
+  # Permission to use all kits: oakkits.kit.*
+  # Kit specific permission: oakkits.kit.<kitname>
+  default-kit-permission: "oakkits.kit.{kit}"
+
+# ============================================
+#           NOTIFICATION SETTINGS
+# ============================================
+notifications:
+  # Show action bar messages
+  actionbar-enabled: true
+  # Show title messages on kit claim
+  title:
+    enabled: false
+    fade-in: 10
+    stay: 40
+    fade-out: 10
+  # Broadcast when player claims expensive kit (cost > threshold)
+  # Broadcast message template is in messages.yml
+  broadcast:
+    enabled: false
+    min-cost: 1000
+
+# ============================================
+#              CONSOLE LOGGING
+# ============================================
+console:
+  # Use colored console output
+  colored: true
+  # Enable debug mode for troubleshooting
+  debug: false
+  # Log kit claims to console
+  log-claims: true
+
+# ============================================
+#            BEDROCK/GEYSER SETTINGS
+# ============================================
+# Requires Floodgate plugin for Bedrock player detection
+bedrock:
+  enabled: true
+  # Use Bedrock forms (popup menus) instead of chat
+  use-forms: true
+  form-title: "OakKits"
+  # Show kit info (cooldown, cost, etc.) in forms
+  show-kit-info-in-form: true
+  # Replace special characters for mobile readability
+  mobile-friendly-messages: true
+
+# ============================================
+#              AUTO-SAVE SETTINGS
+# ============================================
+auto-save:
+  # Enable automatic data saving
+  enabled: true
+  # Auto-save interval in minutes
+  interval: 5
+
+# ============================================
+#              MISC SETTINGS
+# ============================================
+misc:
+  # Check for plugin updates on startup
+  check-updates: true
+  # Allow claiming kits through GUI
+  gui-enabled: true
+  # Default cooldown for new kits (e.g., "1h", "30m", "0")
+  default-cooldown: "0"
+  # Default cost for new kits
+  default-cost: 0

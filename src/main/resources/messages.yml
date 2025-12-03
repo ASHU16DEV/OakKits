@@ -1,0 +1,107 @@
+#  ██████╗  █████╗ ██╗  ██╗██╗  ██╗██╗████████╗███████╗
+# ██╔═══██╗██╔══██╗██║ ██╔╝██║ ██╔╝██║╚══██╔══╝██╔════╝
+# ██║   ██║███████║█████╔╝ █████╔╝ ██║   ██║   ███████╗
+# ██║   ██║██╔══██║██╔═██╗ ██╔═██╗ ██║   ██║   ╚════██║
+# ╚██████╔╝██║  ██║██║  ██╗██║  ██╗██║   ██║   ███████║
+#  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝
+# Messages Configuration | Supports color codes: &a, &b, &c, etc.
+# Placeholders: {kit}, {player}, {time}, {cost}, {balance}
+
+prefix: "&8[&6OakKits&8] "
+
+# Kit Claim Messages
+kit-claimed:
+  chat: "&aYou have claimed the &e{kit} &akit!"
+  actionbar: "&a✓ &e{kit} &aclaimed successfully!"
+
+kit-not-found:
+  chat: "&cKit &e{kit} &cdoes not exist!"
+  actionbar: "&c✗ Kit not found!"
+
+no-permission:
+  chat: "&cYou don't have permission to use this kit!"
+  actionbar: "&c✗ No permission!"
+
+cooldown-active:
+  chat: "&cYou must wait &e{time} &cbefore using &e{kit} &cagain!"
+  actionbar: "&c⏱ Cooldown: &e{time}"
+
+one-time-used:
+  chat: "&cYou have already claimed the &e{kit} &ckit! (One-time use)"
+  actionbar: "&c✗ Already claimed!"
+
+inventory-full:
+  chat: "&cYour inventory is full! Items have been dropped on the ground."
+  actionbar: "&c⚠ Inventory full - Items dropped!"
+
+inventory-full-denied:
+  chat: "&cYour inventory is full! Please make some space first."
+  actionbar: "&c✗ Inventory full!"
+
+# Economy Messages
+not-enough-money:
+  chat: "&cYou need &e${cost} &cto claim this kit! Your balance: &e${balance}"
+  actionbar: "&c✗ Need ${cost}!"
+
+money-deducted:
+  chat: "&a${cost} has been deducted from your balance."
+  actionbar: "&a-${cost}"
+
+# Kit List Messages
+kit-list:
+  header: "&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  title: "&6&l✦ AVAILABLE KITS ✦"
+  format-ready: "&8• &a{kit} &7- &aREADY"
+  format-cooldown: "&8• &e{kit} &7- &cCooldown: &e{time}"
+  format-used: "&8• &c{kit} &7- &4ONE-TIME USED"
+  footer: "&8&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  no-kits: "&cYou don't have permission for any kits."
+
+# Admin Messages
+admin:
+  kit-created: "&aKit &e{kit} &ahas been created successfully!"
+  kit-deleted: "&aKit &e{kit} &ahas been deleted!"
+  kit-given: "&aGave &e{kit} &ato &e{player}&a!"
+  kit-given-target: "&aYou received the &e{kit} &akit from an admin!"
+  cooldown-set: "&aCooldown for &e{kit} &aset to &e{time}&a!"
+  cost-set: "&aCost for &e{kit} &aset to &e${cost}&a!"
+  permission-set: "&aPermission for &e{kit} &aset to &e{permission}&a!"
+  cooldown-reset: "&aReset cooldown for &e{player} &aon kit &e{kit}&a!"
+  config-reloaded: "&aAll configurations reloaded successfully!"
+  player-not-found: "&cPlayer &e{player} &cnot found!"
+  kit-already-exists: "&cKit &e{kit} &calready exists!"
+  invalid-time: "&cInvalid time format! Use: 1d, 2h, 30m, 60s"
+  invalid-cost: "&cInvalid cost! Please enter a valid number."
+  preview-opened: "&aOpened preview of &e{kit} &afor &e{player}&a!"
+
+# Preview GUI
+preview:
+  title: "&8Kit Preview: &6{kit}"
+  cannot-take: "&cYou cannot take items from the preview!"
+
+# Title Notifications (when enabled in config)
+title:
+  kit-claimed:
+    main: "{kit}"
+    subtitle: "&7Kit Claimed!"
+
+# Broadcast Messages (when enabled in config)
+broadcast:
+  kit-claimed: "&e{player} &7claimed &6{kit} &7for &a${cost}!"
+
+# Editor Messages
+editor:
+  opened: "&aKit Editor opened for &e{kit}"
+  saved: "&a✓ Kit saved successfully!"
+  cancelled: "&cInput cancelled."
+  name-updated: "&aDisplay name updated!"
+  permission-updated: "&aPermission updated!"
+  cooldown-updated: "&aCooldown updated!"
+  cost-updated: "&aCost updated!"
+  command-added: "&aCommand added!"
+  command-removed: "&cCommand removed!"
+  items-imported: "&aItems imported from inventory!"
+  armor-imported: "&aArmor imported!"
+  items-cleared: "&cAll items cleared!"
+  armor-cleared: "&cArmor cleared!"
+  onetime-toggled: "&aOne-time use: {status}"

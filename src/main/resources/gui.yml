@@ -1,0 +1,51 @@
+#  ██████╗  █████╗ ██╗  ██╗██╗  ██╗██╗████████╗███████╗
+# ██╔═══██╗██╔══██╗██║ ██╔╝██║ ██╔╝██║╚══██╔══╝██╔════╝
+# ██║   ██║███████║█████╔╝ █████╔╝ ██║   ██║   ███████╗
+# ██║   ██║██╔══██║██╔═██╗ ██╔═██╗ ██║   ██║   ╚════██║
+# ╚██████╔╝██║  ██║██║  ██╗██║  ██╗██║   ██║   ███████║
+#  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝
+# GUI Configuration | Fully Customizable Preview Window
+
+preview:
+  title: "&8✦ &6Kit Preview: &e{kit} &8✦"
+  size: 54
+  
+  border:
+    enabled: true
+    material: BLACK_STAINED_GLASS_PANE
+    name: "&8"
+    slots: [0,1,2,3,4,5,6,7,8,45,46,47,48,49,50,51,52,53]
+  
+  filler:
+    enabled: true
+    material: GRAY_STAINED_GLASS_PANE
+    name: "&7"
+  
+  info-item:
+    enabled: true
+    slot: 49
+    material: PAPER
+    name: "&e&lKit Information"
+    lore:
+      - "&8━━━━━━━━━━━━━━━━━━━━━"
+      - "&7Kit: &f{kit}"
+      - "&7Cooldown: &f{cooldown}"
+      - "&7Cost: &f${cost}"
+      - "&8━━━━━━━━━━━━━━━━━━━━━"
+      - "&c&oThis is a preview only!"
+      - "&c&oYou cannot take items."
+  
+  close-button:
+    enabled: true
+    slot: 53
+    material: BARRIER
+    name: "&c&lClose Preview"
+    lore:
+      - "&7Click to close this menu"
+
+  items-start-slot: 9
+  armor-slots:
+    helmet: 36
+    chestplate: 37
+    leggings: 38
+    boots: 39

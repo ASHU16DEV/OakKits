@@ -1,0 +1,150 @@
+#  ██████╗  █████╗ ██╗  ██╗██╗  ██╗██╗████████╗███████╗
+# ██╔═══██╗██╔══██╗██║ ██╔╝██║ ██╔╝██║╚══██╔══╝██╔════╝
+# ██║   ██║███████║█████╔╝ █████╔╝ ██║   ██║   ███████╗
+# ██║   ██║██╔══██║██╔═██╗ ██╔═██╗ ██║   ██║   ╚════██║
+# ╚██████╔╝██║  ██║██║  ██╗██║  ██╗██║   ██║   ███████║
+#  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝   ╚═╝   ╚══════╝
+# Kits Configuration | All kits defined here
+
+kits:
+  starter:
+    display-name: "&aStarter Kit"
+    permission: "oakkits.kit.starter"
+    cooldown: "1d"
+    cost: 0
+    one-time: false
+    commands: []
+    items:
+      - material: IRON_SWORD
+        amount: 1
+        name: "&7Starter Sword"
+        lore:
+          - "&8A basic sword for beginners"
+        enchantments:
+          SHARPNESS: 1
+      - material: BREAD
+        amount: 16
+      - material: TORCH
+        amount: 32
+    armor:
+      helmet:
+        material: IRON_HELMET
+        name: "&7Starter Helmet"
+        enchantments:
+          PROTECTION: 1
+      chestplate:
+        material: IRON_CHESTPLATE
+        name: "&7Starter Chestplate"
+        enchantments:
+          PROTECTION: 1
+      leggings:
+        material: IRON_LEGGINGS
+        name: "&7Starter Leggings"
+        enchantments:
+          PROTECTION: 1
+      boots:
+        material: IRON_BOOTS
+        name: "&7Starter Boots"
+        enchantments:
+          PROTECTION: 1
+
+  vip:
+    display-name: "&6VIP Kit"
+    permission: "oakkits.kit.vip"
+    cooldown: "12h"
+    cost: 500
+    one-time: false
+    commands:
+      - "effect give {player} minecraft:regeneration 60 1"
+    items:
+      - material: DIAMOND_SWORD
+        amount: 1
+        name: "&b&lVIP Sword"
+        lore:
+          - "&7A powerful sword for VIPs"
+          - "&6★ &eExclusive VIP Item"
+        enchantments:
+          SHARPNESS: 3
+          UNBREAKING: 2
+          FIRE_ASPECT: 1
+      - material: GOLDEN_APPLE
+        amount: 8
+      - material: ENDER_PEARL
+        amount: 4
+      - material: EXPERIENCE_BOTTLE
+        amount: 16
+    armor:
+      helmet:
+        material: DIAMOND_HELMET
+        name: "&b&lVIP Helmet"
+        lore:
+          - "&6★ &eExclusive VIP Armor"
+        enchantments:
+          PROTECTION: 3
+          UNBREAKING: 2
+      chestplate:
+        material: DIAMOND_CHESTPLATE
+        name: "&b&lVIP Chestplate"
+        lore:
+          - "&6★ &eExclusive VIP Armor"
+        enchantments:
+          PROTECTION: 3
+          UNBREAKING: 2
+      leggings:
+        material: DIAMOND_LEGGINGS
+        name: "&b&lVIP Leggings"
+        lore:
+          - "&6★ &eExclusive VIP Armor"
+        enchantments:
+          PROTECTION: 3
+          UNBREAKING: 2
+      boots:
+        material: DIAMOND_BOOTS
+        name: "&b&lVIP Boots"
+        lore:
+          - "&6★ &eExclusive VIP Armor"
+        enchantments:
+          PROTECTION: 3
+          UNBREAKING: 2
+
+  pvp:
+    display-name: "&cPvP Kit"
+    permission: "oakkits.kit.pvp"
+    cooldown: "6h"
+    cost: 0
+    one-time: false
+    commands: []
+    items:
+      - material: IRON_SWORD
+        amount: 1
+        name: "&c&lPvP Blade"
+        enchantments:
+          SHARPNESS: 2
+          KNOCKBACK: 1
+      - material: BOW
+        amount: 1
+        name: "&c&lPvP Bow"
+        enchantments:
+          POWER: 2
+          PUNCH: 1
+      - material: ARROW
+        amount: 32
+      - material: GOLDEN_APPLE
+        amount: 4
+    armor:
+      helmet:
+        material: IRON_HELMET
+        enchantments:
+          PROTECTION: 2
+      chestplate:
+        material: IRON_CHESTPLATE
+        enchantments:
+          PROTECTION: 2
+      leggings:
+        material: IRON_LEGGINGS
+        enchantments:
+          PROTECTION: 2
+      boots:
+        material: IRON_BOOTS
+        enchantments:
+          PROTECTION: 2
